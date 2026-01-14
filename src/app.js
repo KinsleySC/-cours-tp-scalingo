@@ -25,11 +25,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'Pas OK' });
 });
 
-  If (condition) {
-    res.send({Status: "OK"}).status(200);
-  } else {
-    res.send({Status: "Pas OK"}).status(500);
-  }
 /**
  * PARTIE E: POSTGRESQL
  * Tu dois implémenter une lecture ou écriture en base.
