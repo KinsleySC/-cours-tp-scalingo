@@ -7,8 +7,8 @@ const app = express();
  * Tu dois afficher MESSAGE_BIENVENUE et DEBUG ici.
  */
 app.get('/', (req, res) => {
-  const message = "Tu dois compléter";
-  const debug = "Tu dois compléter";
+  const message = "MESSAGE_BIENVENUEs";
+  const debug = "TRUE";
 
   res.send(`
     <h1>${message}</h1>
@@ -25,6 +25,11 @@ app.get('/health', (req, res) => {
   res.json({ status: 'Pas OK' });
 });
 
+  If (condition) {
+    res.send({Status: "OK"}).status(200);
+  } else {
+    res.send({Status: "Pas OK"}).status(500);
+  }
 /**
  * PARTIE E: POSTGRESQL
  * Tu dois implémenter une lecture ou écriture en base.
